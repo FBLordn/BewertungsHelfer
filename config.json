@@ -1,0 +1,15 @@
+{
+    "lines": [
+        "Line1",
+        "Line2",
+        "Line3"
+    ],
+    "Assessments": [
+        "very good",
+        "good",
+        "okay",
+        "meh",
+        "bad",
+        "very bad"
+    ]
+}
