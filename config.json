@@ -1,18 +1,19 @@
 {
     "lines": [
-        "Line1",
-        "Line2",
+        "$N hat im Unterricht $B mitgemacht.",
+        "Er hat seine Verantwortungen $B übernommen.",
         "Der Schüler $N hat sich $B im Umfeld mit seinen Mitschüler*innen verhalten.",
         "Die Schülerin Maria konnte sich $B in ihr Umfeld integrieren.",
-        "Line5 $N $B",
-        "Line6"
+        "$N ist ein $Ber Schüler.",
+        "$N ist $B"
     ],
     "assessments": [
+        "",
         "sehr gut",
         "gut",
         "okay",
         "schlecht",
         "sehr schlecht"
     ],
-    "file": "Bewertung_$N.txt"
+    "file": "bewertungen/$N_Bewertung.txt"
 }
