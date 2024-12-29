@@ -1,14 +1,12 @@
 import json
 
-class ConfigLine:
-    __init__(self, dropDownOptions, label):
-        self.label = label
-        self.options = dropDownOptions
+class Config:
+    def __init__(self, lines: list[str], options: list[str], file: str):
+        self.lines = lines
+        self.options = options
+        self.file = file
 
-def parse():
-    configLines = []
+def parse() -> Config:
     with open("config.json", "r") as config_json:
         config = json.load(config_json)
-        for line in config.lines:
-            configLines.append(ConfigLine(config.Assessments, line))
-    return configLines
+        return Config(config["lines"], config["assessments"], config["file"])

@@ -2,14 +2,17 @@
     "lines": [
         "Line1",
         "Line2",
-        "Line3"
+        "Der Schüler $N hat sich $B im Umfeld mit seinen Mitschüler*innen verhalten.",
+        "Die Schülerin Maria konnte sich $B in ihr Umfeld integrieren.",
+        "Line5 $N $B",
+        "Line6"
     ],
-    "Assessments": [
-        "very good",
-        "good",
+    "assessments": [
+        "sehr gut",
+        "gut",
         "okay",
-        "meh",
-        "bad",
-        "very bad"
-    ]
+        "schlecht",
+        "sehr schlecht"
+    ],
+    "file": "Bewertung_$N.txt"
 }
