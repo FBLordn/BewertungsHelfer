@@ -75,12 +75,15 @@
      </spacer>
     </item>
     <item>
-     <layout class="QVBoxLayout" name="configContainer" stretch=""/>
+     <layout class="QVBoxLayout" name="configContainer"/>
     </item>
     <item>
      <widget class="QDialogButtonBox" name="saveBox">
       <property name="standardButtons">
-       <set>QDialogButtonBox::Cancel|QDialogButtonBox::Save</set>
+       <set>QDialogButtonBox::Reset|QDialogButtonBox::Save</set>
+      </property>
+      <property name="centerButtons">
+       <bool>false</bool>
       </property>
      </widget>
     </item>

@@ -14,8 +14,16 @@ class MainWindowWrapper (Ui_MainWindow):
             self.config_lines[i].label.setText(format_assessment(self.config.lines[i], self.config_lines[i].options.currentText(), name)) 
 
     def save(self, button):
-        file = self.config.file.replace("$N", self.nameInputBox.text().replace(" ", "_"))
-        #TODO
+        if button.text() == "Save":
+            file = self.config.file.replace("$N", self.nameInputBox.text().replace(" ", "_"))
+            with open(file, "a") as saved:
+                for line in self.config_lines:
+                    saved.write("\n"+line.label.text())
+        elif button.text() == "Reset":
+            self.nameInputBox.setText("")
+            for i in range(0,len(self.config_lines)):
+                self.config_lines[i].label.setText(self.config.lines[i])
+                self.config_lines[i].options.setCurrentIndex(0)
 
     def setupUi(self, main_window):
         super().setupUi(main_window)
