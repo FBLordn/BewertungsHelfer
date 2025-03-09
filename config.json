@@ -1,12 +1,28 @@
 {
+    "_comment": "Kriterien ($B für die Bewertung und $N für den Namen)",
     "lines": [
-        "$N hat im Unterricht $B mitgemacht.",
-        "Er hat seine Verantwortungen $B übernommen.",
-        "Der Schüler $N hat sich $B im Umfeld mit seinen Mitschüler*innen verhalten.",
-        "Die Schülerin Maria konnte sich $B in ihr Umfeld integrieren.",
-        "$N ist ein $Ber Schüler.",
-        "$N ist $B"
+		"$N kann $B konzentriert und motiviert über einen längeren Zeitraum arbeiten.",
+		"$N kann auch bei Ablenkung $B weiterarbeiten.",
+		"$N kann sich auch bei ungeliebten Aufgaben und Anforderungen $B anstrengen.",
+		"$N kann auftretende Schwierigkeiten $B erkennen.",
+		"$N kann $B angemessen um Hilfe bitten.",
+		"$N kann Absprachen $B einhalten.",
+		"$N kann $B Aufgaben vollständig erledigen.",
+		"$N kann $B Arbeitsschritte und Ergebnisse prüfen.",
+		"$N kann $B Mängel und Fehler korrigieren.",
+		"$N kann sich $B mit Problemen auseinandersetzen.",
+		"$N kann $B eigene Lösungsvorschläge und Ideen einbringen.",
+		"$N kann $B fachübergreifendes Wissen in den Unterricht einbringen.",
+		"$N kann $B gut mit anderen zusammenarbeiten.",
+		"$N kann $B sein Wissen an die Mitschülerinnen und Mitschüler weitergeben.",
+		"$N kann $B auf Gerechtigkeit achten.",
+		"$N kann sich $B für schwächere Mitschülerinnen und Mitschüler einsetzen.",
+		"$N kann $B bei Konfliktlösungen helfen.",
+		"$N kann $B Verantwortung übernehmen.",
+		"$N kann das Schulleben $B mitgestalten.",
+		"$N kann Dienste in der Klasse $B ausführen."
     ],
+    "_comment1": "Bewertungen (leere Bewertung falls Zeile ausgelassen werden soll)",
     "assessments": [
         "",
         "sehr gut",
@@ -15,5 +31,6 @@
         "schlecht",
         "sehr schlecht"
     ],
+    "_comment2": "Pfad für die Bewertungs-Dateien ($N für den Namen)",
     "file": "bewertungen/$N_Bewertung.txt"
 }

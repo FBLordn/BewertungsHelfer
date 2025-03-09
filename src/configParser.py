@@ -6,7 +6,7 @@ class Config:
         self.options = options
         self.file = file
 
-def parse() -> Config:
-    with open("config.json", "r") as config_json:
+def parse(config_path: str = "config.json") -> Config:
+    with open(config_path, "r") as config_json:
         config = json.load(config_json)
         return Config(config["lines"], config["assessments"], config["file"])

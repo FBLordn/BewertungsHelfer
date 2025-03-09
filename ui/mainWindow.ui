@@ -16,7 +16,7 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,1,8,1">
     <item>
-     <layout class="QHBoxLayout" name="nameBox" stretch="1,1,0,4">
+     <layout class="QHBoxLayout" name="nameBox" stretch="1,1,0,4,0,0">
       <item>
        <widget class="QLabel" name="nameTag">
         <property name="sizePolicy">
@@ -58,6 +58,16 @@
          </size>
         </property>
        </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="subjectTag">
+        <property name="text">
+         <string>Subject:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="subjectInput"/>
       </item>
      </layout>
     </item>
