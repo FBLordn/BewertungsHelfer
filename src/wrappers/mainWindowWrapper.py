@@ -16,7 +16,7 @@ class MainWindowWrapper (Ui_MainWindow):
     def save(self, button):
         if button.text() == "Save":
             file = self.config.file.replace("$N", self.nameInputBox.text().replace(" ", "_"))
-            with open(file, "a") as saved:
+            with open(file, "a", encoding='utf-8') as saved:
                 text = self.subjectInput.text() + "\n" if self.subjectInput.text() != "" else ""
                 for line in self.config_lines:
                     if line.options.currentText() != "":

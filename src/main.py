@@ -1,4 +1,4 @@
-from PyQt5 import QtWidgets 
+from PyQt5 import QtWidgets
 import sys
 from wrappers.mainWindowWrapper import MainWindowWrapper
 
