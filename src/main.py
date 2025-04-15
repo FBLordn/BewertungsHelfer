@@ -1,6 +1,6 @@
+from PyQt5 import QtWidgets 
 import sys
 from wrappers.mainWindowWrapper import MainWindowWrapper
-from PyQt5 import QtWidgets 
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
