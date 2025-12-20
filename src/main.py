@@ -1,4 +1,4 @@
-from PyQt5 import QtWidgets
+from PyQt6 import QtWidgets
 import sys
 from wrappers.mainWindowWrapper import MainWindowWrapper
 
@@ -8,4 +8,4 @@ if __name__ == "__main__":
     ui = MainWindowWrapper()
     ui.setupUi(MainWindow)
     MainWindow.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

@@ -1,6 +1,6 @@
 from generated.mainWindow import Ui_MainWindow
 from configParser import parse
-from PyQt5 import QtWidgets
+from PyQt6 import QtWidgets
 
 class ConfigLine:
     def __init__(self, dropDownOptions:QtWidgets.QComboBox, label: QtWidgets.QHBoxLayout):
@@ -50,9 +50,9 @@ class MainWindowWrapper (Ui_MainWindow):
         config_label.setObjectName("configLabel"+str(counter))
         config_label.setText(self.config.lines[counter])
         config_line.addWidget(config_label, 1)
-        vertical_spacer = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        vertical_spacer = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
         config_line.addItem(vertical_spacer)
-        horizontal_spacer = QtWidgets.QSpacerItem(40, 20, 1, QtWidgets.QSizePolicy.Minimum)
+        horizontal_spacer = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Minimum)
         config_line.addItem(horizontal_spacer)
         config_dropdown = QtWidgets.QComboBox(self.centralwidget)
         config_dropdown.addItems(self.config.options)
